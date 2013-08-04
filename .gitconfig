@@ -26,4 +26,4 @@
     user = yadongwen
 [alias]
     s = status
-    lp = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
