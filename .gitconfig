@@ -1,0 +1,18 @@
+[user]
+	name = Yadong Wen
+	email = ralph.wen@gmail.com
+[credential]
+    helper = cache --timeout=3600
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+[core]
+    editor = vim
+    pager = less -r
+
+# Any GitHub repo with my username should be checked out r/w by default
+# http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
+[url "git@github.com:yadongwen/"]
+    insteadOf = "git://github.com/yadongwen/"
