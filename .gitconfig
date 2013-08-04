@@ -3,16 +3,27 @@
 	email = ralph.wen@gmail.com
 [credential]
     helper = cache --timeout=3600
-[color]
-    diff = auto
-    status = auto
-    branch = auto
-    ui = true
 [core]
     editor = vim
     pager = less -r
-
-# Any GitHub repo with my username should be checked out r/w by default
-# http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
-[url "git@github.com:yadongwen/"]
-    insteadOf = "git://github.com/yadongwen/"
+[color]
+    ui = true
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+[github]
+    user = yadongwen
+[alias]
+    s = status
+    lp = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
